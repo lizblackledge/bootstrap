@@ -8,6 +8,7 @@
     <title>Bethany's Pie Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -143,17 +144,29 @@
                             </div>
 
                             <div class="col-md-5">
-                                <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country" required>
-                                    <option value="">Choose...</option>
-                                    <option>Belgium</option>
-                                    <option>France</option>
-                                    <option>Germany</option>
-                                    <option>United Kingdom</option>
-                                    <option>United States</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid country.
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="country" class="form-label">Country</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Choose...</option>
+                                            <option>Belgium</option>
+                                            <option>France</option>
+                                            <option>Germany</option>
+                                            <option>United Kingdom</option>
+                                            <option>United States</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a valid country.
+                                        </div>
+                                    </div>
+                                    <div class="col-auto align-self-end">
+                                        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                            data-bs-trigger="hover"
+                                            data-bs-content="If your country isn't listed here, we're currently not shipping to your country. Contact us via the contact form and we'll see how we can help you.">
+                                            <i class="bi bi-info-circle text-primary" role="img" aria-label="Info"
+                                                style="font-size: 1.5rem;"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -269,6 +282,17 @@
     </main>
 
     <script src="js/form-validation.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+            .forEach(function (popover) {
+                new bootstrap.Popover(popover)
+            })
+    </script>
 
 </body>
 

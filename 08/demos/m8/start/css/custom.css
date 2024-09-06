@@ -55,3 +55,35 @@ body {
   width: 500px;
 }
 
+/* Jumbotron */
+
+.jumbotron-cheese-cakes {
+  background: url('../images/products/cheesecake.jpg') no-repeat fixed;
+}
+
+.jumbotron-all-pies {
+  background: url('../images/carousel2.jpg') no-repeat fixed;
+}
+
+.jumbotron-fruit-pies {
+  background: url('../images/products/strawberrypie.jpg') no-repeat fixed;
+}
+
+.jumbotron-seasonal-pies {
+  background: url('../images/products/cranberrypie.jpg') no-repeat fixed;
+}
+
+.jumbotron-other {
+  background: url('../images/carousel3.jpg') no-repeat fixed;
+}
+
+.jumbotron-detail-apple-pie {
+  background: url('../images/products/applepie.jpg') no-repeat fixed;
+}
+
+.jumbotron {
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.1);
+  height: 40vh;
+  background-size: cover;
+}
+
